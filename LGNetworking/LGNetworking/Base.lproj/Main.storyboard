@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL6-E6-bao">
+                                <rect key="frame" x="60" y="120" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RjM-xD-nee"/>
+                                    <constraint firstAttribute="width" constant="200" id="zcK-u7-aQf"/>
+                                </constraints>
+                                <state key="normal" title="POST请求">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickPOSTRequestBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxe-AA-igN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-dC-ImM">
+                                <rect key="frame" x="60" y="170" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GET请求">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGETRequestBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGr-qi-Ph6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpx-ro-g6a">
+                                <rect key="frame" x="60" y="220" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="下载图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickDownloadBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="95A-Lv-Wr6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoW-jR-V3K">
+                                <rect key="frame" x="60" y="270" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="上传图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickUploadImageBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZw-AO-LIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE1-Z3-sIS">
+                                <rect key="frame" x="60" y="320" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.43137254899999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="上传文件">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickUploadFileBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyr-hs-XFi"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-Io-f9F">
+                                <rect key="frame" x="10" y="80" width="300" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="f04-Yf-cdX"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dpx-ro-g6a" firstAttribute="height" secondItem="fL6-E6-bao" secondAttribute="height" id="0Iq-xB-2nF"/>
+                            <constraint firstItem="BoW-jR-V3K" firstAttribute="width" secondItem="fL6-E6-bao" secondAttribute="width" id="4r7-5f-oqX"/>
+                            <constraint firstItem="fL6-E6-bao" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="DcL-jJ-n2l"/>
+                            <constraint firstItem="7IT-dC-ImM" firstAttribute="top" secondItem="fL6-E6-bao" secondAttribute="bottom" constant="20" id="EGJ-WB-1EZ"/>
+                            <constraint firstItem="Dpx-ro-g6a" firstAttribute="top" secondItem="7IT-dC-ImM" secondAttribute="bottom" constant="20" id="F4d-MB-tde"/>
+                            <constraint firstItem="BoW-jR-V3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3P-KM-WZk"/>
+                            <constraint firstItem="TIs-Io-f9F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="JCS-YZ-bTw"/>
+                            <constraint firstItem="TIs-Io-f9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MQ1-vY-cjX"/>
+                            <constraint firstItem="lE1-Z3-sIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mzz-Or-HDR"/>
+                            <constraint firstItem="lE1-Z3-sIS" firstAttribute="width" secondItem="fL6-E6-bao" secondAttribute="width" id="RzS-Wu-oLE"/>
+                            <constraint firstItem="Dpx-ro-g6a" firstAttribute="width" secondItem="fL6-E6-bao" secondAttribute="width" id="cvE-G3-KFI"/>
+                            <constraint firstItem="7IT-dC-ImM" firstAttribute="height" secondItem="fL6-E6-bao" secondAttribute="height" id="fOs-OI-uYf"/>
+                            <constraint firstItem="lE1-Z3-sIS" firstAttribute="height" secondItem="fL6-E6-bao" secondAttribute="height" id="gMB-i2-o80"/>
+                            <constraint firstItem="7IT-dC-ImM" firstAttribute="width" secondItem="fL6-E6-bao" secondAttribute="width" id="ko5-aP-jWc"/>
+                            <constraint firstItem="7IT-dC-ImM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwu-IN-UxK"/>
+                            <constraint firstItem="Dpx-ro-g6a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lVs-cA-rZc"/>
+                            <constraint firstItem="fL6-E6-bao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lho-R4-VQz"/>
+                            <constraint firstItem="BoW-jR-V3K" firstAttribute="top" secondItem="Dpx-ro-g6a" secondAttribute="bottom" constant="20" id="ulT-GP-p2j"/>
+                            <constraint firstItem="lE1-Z3-sIS" firstAttribute="top" secondItem="BoW-jR-V3K" secondAttribute="bottom" constant="20" id="xB2-AY-Tc5"/>
+                            <constraint firstItem="BoW-jR-V3K" firstAttribute="height" secondItem="fL6-E6-bao" secondAttribute="height" id="yhn-df-M5o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="TIs-Io-f9F" id="rhF-s4-LaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.33333333333334" y="295.83333333333331"/>
+        </scene>
+    </scenes>
+</document>
